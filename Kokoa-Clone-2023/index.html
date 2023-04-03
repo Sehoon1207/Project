@@ -37,9 +37,15 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="password" />
+    <form action="friends.html" method="get" id="login-form">
+      <!-- action은 어떤 페이지로 data를 보낼 건지 지정 
+      method는 2가지 방식 중 하나를 사용
+        post  백엔드 서버에 정보를 전송하는 방식.. 아직 서버가 없음
+        get   보안에 취약함. url에 포함되어도 상관없는 정보들을 보내는 것 
+      ** post를 써도 현재 작업환경에서는 동일하게 작동하지만 다른곳에서는 작동하지 x
+      -->
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="password" />
       <input type="submit" value="Log In" />
       <a href="#">FInd Kokoa Account or Password</a>
       <!-- 이 link하나만을 위해서 id나 class를 또 만들면 너무 많아지기 때문에 form에 넣어버림 -->
