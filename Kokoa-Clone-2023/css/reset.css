@@ -122,3 +122,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 모든 링크 밑줄 x
+링크들이 color를 부모로부터 상속 */
