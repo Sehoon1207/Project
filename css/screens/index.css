@@ -81,6 +81,7 @@
   #first-text {
     margin-left: 0px;
     margin-top: 50px;
+    padding: 0 10px;
   }
   #splash-screen img {
     scale: 0.3;
