@@ -4,6 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+#firstpage img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 #firstpage__logo {
@@ -34,8 +41,9 @@
 }
 
 #first-text {
+  max-height: 300px;
   width: auto;
-  height: 300px;
+  height: auto;
   margin-left: 100px;
 }
 
@@ -64,4 +72,17 @@
 
 #splash-screen img {
   scale: 0.4;
+}
+
+@media (max-width: 1000px) {
+  #firstpage {
+    flex-direction: column;
+  }
+  #first-text {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  #splash-screen img {
+    scale: 0.3;
+  }
 }
