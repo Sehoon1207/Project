@@ -20,6 +20,7 @@
 /* screens */
 @import "screens/index.css";
 @import "screens/home.css";
+@import "screens/projects.css";
 /* @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
