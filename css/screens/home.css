@@ -1,8 +1,13 @@
+.home-img img {
+  width: 100%;
+}
+
 .short-intro {
+  position: relative;
   display: flex;
+  /* width: 100%; */
   font-size: 42px;
   justify-content: space-between;
-  /* position: relative; */
 }
 .short-intro__greetings {
   display: flex;
@@ -14,7 +19,7 @@
 }
 
 .short-intro__greetings span:last-child {
-  width: 50%;
+  width: 40%;
   font-size: 18px;
 }
 
@@ -31,17 +36,17 @@
   padding: 5px 10px;
   position: absolute;
   z-index: 3;
-  top: 32vh;
-  left: -55vw;
+  top: 232px;
+  left: -665px;
 }
 
 .short-intro__right__photo {
   width: 400px;
-  height: auto;
+
   position: absolute;
   z-index: 2;
-  top: 5vh;
-  left: -37vw;
+  top: 5px;
+  left: -470px;
 }
 
 .short-intro__right__back-square {
@@ -50,6 +55,6 @@
   background-color: var(--backgroundcolor);
   position: absolute;
   z-index: 1;
-  top: 10vh;
-  left: -32vw;
+  top: 25px;
+  left: -400px;
 }
