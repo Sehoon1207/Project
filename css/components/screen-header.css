@@ -29,7 +29,7 @@
   font-weight: bolder;
   /* justify-content: space-between; */
   color: var(--backgroundcolor);
-  margin: 0 20px;
+  /* margin: 0 20px; */
 }
 
 .screen-header__icons a {
