@@ -36,6 +36,10 @@
   margin: 0 15px;
 }
 
+.screen-header__icons a:hover {
+  color: var(--pointcolor);
+}
+
 .screen-header__icons img {
   width: 20px;
   height: auto;
