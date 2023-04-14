@@ -23,6 +23,7 @@
 }
 
 .short-intro__greetings span {
+  font-style: bold;
   margin-bottom: 10px;
 }
 
