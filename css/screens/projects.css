@@ -1,6 +1,6 @@
 .projects-index {
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 200px;
   border-left: var(--pointcolor);
   border-bottom: var(--pointcolor);
 }
@@ -103,11 +103,67 @@
 }
 /* ------------------연도부분 끝------------------ */
 
+.ex {
+  width: 90%;
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  border-top: 1px solid var(--backgroundcolor);
+  padding-top: 20px;
+  margin-left: 200px;
+  margin-bottom: 40px;
+}
+
+.ex-frame {
+  opacity: 0.8;
+}
+
+.ex-frame:hover {
+  opacity: 1;
+}
+
+.ex-frame__imgbox {
+  width: 320px;
+  height: 200px;
+  background-color: white;
+  margin: 0 5px;
+  box-shadow: 1.5px 1.5px 5px grey;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex-frame__imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .projects-project {
   margin-top: 200px;
   display: block;
   /* position: relative; */
 }
+
+.ex-frame__abstract {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 150px;
+  background-color: white;
+  margin: 0 5px;
+  margin-bottom: 40px;
+  box-shadow: 1.5px 1.5px 5px grey;
+}
+
+.project__name {
+  padding: 0 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ------------------------이하 부분은 정리해야함 */
 
 /* .projects-project__big-img {
   width: 100vw;
