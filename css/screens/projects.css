@@ -1,5 +1,13 @@
 .projects-index {
+  margin-top: 100px;
+  margin-left: 100px;
+  border-left: var(--pointcolor);
+  border-bottom: var(--pointcolor);
+}
+
+.projects-index__row {
   display: flex;
+  justify-content: center;
 }
 
 @keyframes boxDrop {
@@ -16,52 +24,142 @@
   }
 }
 
-@for $i from 1 through 6 {
-  projects-index__box:nth-child(#{$i}) {
-    transform: translateY(($i - 1) * 100px);
-  }
-}
-
-.projects-index__box {
+.projects-index__row__box-empty {
   width: 50px;
   height: 50px;
-  background-color: var(--backgroundcolor);
-  margin: 1px;
+  margin: 2px;
+  /* background-color: var(--backgroundcolor);
   box-shadow: 1.5px 1.5px 5px grey;
   animation: boxDrop 1s ease-in-out forwards;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
-.projects-index__box:hover {
+.projects-index__row__box {
+  width: 50px;
+  height: 50px;
+  background-color: var(--backgroundcolor);
+  margin: 2px;
+  box-shadow: 1.5px 1.5px 5px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: boxDrop 1s ease-in-out forwards;
+}
+
+.projects-index__row__box:hover {
   background-color: var(--pointcolor);
 }
 
-#projects-index__box__comment {
+#projects-index__row__box__comment {
   width: 20px;
 }
 
-.projects-project {
-  margin-top: 200px;
-  display: flex;
+.projects-index__row__box:nth-child(2) {
+  animation-delay: 0.1s;
 }
 
-.projects-project__short {
+.projects-index__row__box:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.projects-index__row__box:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.projects-index__row__box:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.projects-index__row__box:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.projects-index__row__box:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.projects-index__row__box:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.projects-index__row__box:nth-child(9) {
+  animation-delay: 0.8s;
+}
+/* .projects-index__row__box:last-child {
+  animation-delay: 0.6s;
+} */
+/* ------------------박스부분 끝------------------ */
+.projects-index__year {
+  display: flex;
+  justify-content: center;
+}
+.projects-index__year > div {
+  width: 50px;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+/* ------------------연도부분 끝------------------ */
+
+.projects-project {
+  margin-top: 200px;
+  display: block;
+  /* position: relative; */
+}
+
+/* .projects-project__big-img {
+  width: 100vw;
+  height: 400px;
+} */
+
+.projects-project__frame {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-project__big-img > img {
+  /* position: relative; */
+  /* position: absolute; */
+  width: 100%;
+  /* z-index: 1; */
+}
+
+.projects-project__example {
+  position: absolute;
+  max-width: 100%;
   width: 400px;
   height: 300px;
   background-color: var(--backgroundcolor);
-  margin: 1px;
+  opacity: 0.8;
+  z-index: 2;
+
+  bottom: 0;
+  right: 0;
   color: white;
-  padding: 15px;
+}
+/* -----------------------------------------위에연습중 */
+.projects-project__short {
+  position: absolute;
+  max-width: 100%;
+  width: 400px;
+  height: 300px;
+  background-color: var(--backgroundcolor);
+  opacity: 0.9;
+  z-index: 2;
+
+  bottom: 0;
+  right: 0;
+  color: white;
 }
 
 .projects-project__short > span,
 .projects-project__short > a {
   display: block;
   font-weight: 900;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .projects-project__short:hover {
@@ -92,4 +190,19 @@
   width: 100px;
   height: 100px;
   background-color: white;
+  margin-left: 5px;
 }
+
+.projects-project__short__links {
+  position: absolute;
+  /* bottom: 0; */
+  /* margin-top: 50px; */
+  /* display: flex; */
+  justify-content: space-between;
+  font-weight: 900;
+  top: calc(100% - 35px);
+}
+
+/* #kokoa-clone-link {
+  text-align: right;
+} */
